@@ -699,94 +699,103 @@ local MISSIONS = {
         ['1-1'] = { name="The Rites of Life", steps={
             -- add steps
         }},
-        ['1-2'] = { name="The Rites of Life (cont.)", steps={
+        ['1-2'] = { name="Below the Arks", steps={
             -- add steps
         }},
-        ['2-1'] = { name="The Savage", steps={
+        ['1-3'] = { name="The Mothercrystals", steps={
             -- add steps
         }},
-        ['2-2'] = { name="Ancient Vows", steps={
+        ['2-1'] = { name="An Invitation West", steps={
+            -- add steps
+        }},
+        ['2-2'] = { name="The Lost City", steps={
             -- add steps
         }},
         ['2-3'] = { name="Distant Beliefs", steps={
             -- add steps
         }},
-        ['2-4'] = { name="The Secrets of Worship", steps={
+        ['2-4'] = { name="An Eternal Melody", steps={
             -- add steps
         }},
-        ['2-5'] = { name="The Requiem", steps={
+        ['2-5'] = { name="Ancient Vows", steps={
             -- add steps
         }},
-        ['3-1'] = { name="Darkness Named", steps={
+        ['3-1'] = { name="The Call of the Wyrmking", steps={
             -- add steps
         }},
-        ['3-2'] = { name="Ruler of the Skies", steps={
+        ['3-2'] = { name="A Vessel Without a Captain", steps={
             -- add steps
         }},
-        ['3-3'] = { name="Jeuno: The Crossroads of Time", steps={
+        ['3-3'] = { name="The Road Forks", steps={
             -- add steps
         }},
-        ['3-4'] = { name="The Call of the Wyrmking", steps={
+        ['3-4'] = { name="Tending Aged Wounds", steps={
             -- add steps
         }},
-        ['3-5'] = { name="Winds of Change", steps={
+        ['3-5'] = { name="Darkness Named", steps={
             -- add steps
         }},
         ['4-1'] = { name="Sheltering Doubt", steps={
             -- add steps
         }},
-        ['4-2'] = { name="Desires of Emptiness", steps={
+        ['4-2'] = { name="The Savage", steps={
             -- add steps
         }},
-        ['4-3'] = { name="In the Name of the Father", steps={
+        ['4-3'] = { name="The Secrets of Worship", steps={
             -- add steps
         }},
-        ['5-1'] = { name="Eternal Gravestone", steps={
+        ['4-4'] = { name="Slanderous Utterings", steps={
             -- add steps
         }},
-        ['5-2'] = { name="The Warrior's Path", steps={
+        ['5-1'] = { name="The Enduring Tumult of War", steps={
             -- add steps
         }},
-        ['5-3'] = { name="Souls in Shadow", steps={
+        ['5-2'] = { name="Desires of Emptiness", steps={
             -- add steps
         }},
-        ['6-1'] = { name="Ravenous Roots", steps={
+        ['5-3'] = { name="Three Paths", steps={
             -- add steps
         }},
-        ['6-2'] = { name="An Empire Divided", steps={
+        ['6-1'] = { name="For Whom the Verse is Sung", steps={
             -- add steps
         }},
-        ['6-3'] = { name="More Than Meets the Eye", steps={
+        ['6-2'] = { name="A Place to Return", steps={
             -- add steps
         }},
-        ['6-4'] = { name="What Price Loyalty?", steps={
+        ['6-3'] = { name="More Questions than Answers", steps={
             -- add steps
         }},
-        ['7-1'] = { name="The Warrior's Path", steps={
+        ['6-4'] = { name="One to be Feared", steps={
             -- add steps
         }},
-        ['7-2'] = { name="Calm Before the Storm", steps={
+        ['7-1'] = { name="Chains and Bonds", steps={
             -- add steps
         }},
-        ['7-3'] = { name="Dawn", steps={
+        ['7-2'] = { name="Flames in the Darkness", steps={
             -- add steps
         }},
-        ['7-4'] = { name="Dawn (cont.)", steps={
+        ['7-3'] = { name="Fire in the Eyes of Men", steps={
             -- add steps
         }},
-        ['7-5'] = { name="A Fate Decided", steps={
+        ['7-4'] = { name="Calm Before the Storm", steps={
             -- add steps
         }},
-        ['8-1'] = { name="Return to the Depths", steps={
+        ['7-5'] = { name="The Warrior's Path", steps={
             -- add steps
         }},
-        ['8-2'] = { name="The Chains that Bind Us", steps={
+        ['8-1'] = { name="Garden of Antiquity", steps={
             -- add steps
         }},
-        ['8-3'] = { name="Eternal Gravestone", steps={
+        ['8-2'] = { name="A Fate Decided", steps={
             -- add steps
         }},
-        ['8-4'] = { name="The Last Verse", steps={
+        ['8-3'] = { name="When Angels Fall", steps={
+            -- add steps
+        }},
+        ['8-4'] = { name="Dawn", steps={
+            -- add steps
+        }},
+        ['8-5'] = { name="The Last Verse", steps={
             -- add steps
         }},
     },
@@ -1001,64 +1010,166 @@ local MISSIONS = {
     -- Wings of the Goddess
     ---------------------------------------------------------------------------
     wotg = {
-        ['1']  = { name="The Tigress Strikes", steps={
+        ['1']  = { name="Cavernous Maws", steps={
             -- add steps
         }},
-        ['2']  = { name="Cait Sith", steps={
+        ['2']  = { name="Back to the Beginning", steps={
             -- add steps
         }},
-        ['3']  = { name="Cait Sith (cont.)", steps={
+        ['3']  = { name="Cait Sith", steps={
             -- add steps
         }},
-        ['4']  = { name="Crossroads of Time", steps={
+        ['4']  = { name="The Queen of the Dance", steps={
             -- add steps
         }},
-        ['5']  = { name="In the Name of the Father", steps={
+        ['5']  = { name="While the Cat is Away", steps={
             -- add steps
         }},
-        ['6']  = { name="Shining Paths", steps={
+        ['6']  = { name="A Timeswept Butterfly", steps={
             -- add steps
         }},
         ['7']  = { name="Purple, The New Black", steps={
             -- add steps
         }},
-        ['8']  = { name="Maiden of the Dusk", steps={
+        ['8']  = { name="In the Name of the Father", steps={
             -- add steps
         }},
-        ['9']  = { name="Cait Sith, Part II", steps={
+        ['9']  = { name="Dancers in Distress", steps={
             -- add steps
         }},
-        ['10'] = { name="Dancers in Distress", steps={
+        ['10'] = { name="Daughter of a Knight", steps={
             -- add steps
         }},
-        ['11'] = { name="From the Nest", steps={
+        ['11'] = { name="A Spoonful of Sugar", steps={
             -- add steps
         }},
-        ['12'] = { name="Bonds of Trust", steps={
+        ['12'] = { name="Affairs of State", steps={
             -- add steps
         }},
-        ['13'] = { name="Crystal War Memories", steps={
+        ['13'] = { name="Borne by the Wind", steps={
             -- add steps
         }},
-        ['14'] = { name="To the Skies", steps={
+        ['14'] = { name="A Nation on the Brink", steps={
             -- add steps
         }},
-        ['15'] = { name="Signs and Portents", steps={
+        ['15'] = { name="Crossroads of Time", steps={
             -- add steps
         }},
-        ['16'] = { name="Daughters of a Divine Mother", steps={
+        ['16'] = { name="Sandswept Memories", steps={
             -- add steps
         }},
-        ['17'] = { name="Dawn's Dim Offspring", steps={
+        ['17'] = { name="Northland Exposure", steps={
             -- add steps
         }},
-        ['18'] = { name="Blood and Glory", steps={
+        ['18'] = { name="Traitor in the Midst", steps={
             -- add steps
         }},
-        ['19'] = { name="Beneath Tavnazian Skies", steps={
+        ['19'] = { name="Betrayal at Beaucedine", steps={
             -- add steps
         }},
-        ['20'] = { name="Where It All Begins", steps={
+        ['20'] = { name="On Thin Ice", steps={
+            -- add steps
+        }},
+        ['21'] = { name="Proof of Valor", steps={
+            -- add steps
+        }},
+        ['22'] = { name="A Sanguinary Prelude", steps={
+            -- add steps
+        }},
+        ['23'] = { name="Dungeons and Dancers", steps={
+            -- add steps
+        }},
+        ['24'] = { name="Distorter of Time", steps={
+            -- add steps
+        }},
+        ['25'] = { name="The Will of the World", steps={
+            -- add steps
+        }},
+        ['26'] = { name="Fate in Haze", steps={
+            -- add steps
+        }},
+        ['27'] = { name="The Scent of Battle", steps={
+            -- add steps
+        }},
+        ['28'] = { name="Another World", steps={
+            -- add steps
+        }},
+        ['29'] = { name="A Hawk in Repose", steps={
+            -- add steps
+        }},
+        ['30'] = { name="The Battle of Xarcabard", steps={
+            -- add steps
+        }},
+        ['31'] = { name="Prelude to a Storm", steps={
+            -- add steps
+        }},
+        ['32'] = { name="Storm's Crescendo", steps={
+            -- add steps
+        }},
+        ['33'] = { name="Into the Beast's Maw", steps={
+            -- add steps
+        }},
+        ['34'] = { name="The Hunter Ensnared", steps={
+            -- add steps
+        }},
+        ['35'] = { name="Flight of the Lion", steps={
+            -- add steps
+        }},
+        ['36'] = { name="Fall of the Hawk", steps={
+            -- add steps
+        }},
+        ['37'] = { name="Darkness Descends", steps={
+            -- add steps
+        }},
+        ['38'] = { name="Adieu, Lilisette", steps={
+            -- add steps
+        }},
+        ['39'] = { name="By the Fading Light", steps={
+            -- add steps
+        }},
+        ['40'] = { name="Edge of Existence", steps={
+            -- add steps
+        }},
+        ['41'] = { name="Her Memories", steps={
+            -- add steps
+        }},
+        ['42'] = { name="Forget Me Not", steps={
+            -- add steps
+        }},
+        ['43'] = { name="Pillar of Hope", steps={
+            -- add steps
+        }},
+        ['44'] = { name="Glimmer of Life", steps={
+            -- add steps
+        }},
+        ['45'] = { name="Time Slips Away", steps={
+            -- add steps
+        }},
+        ['46'] = { name="When Wills Collide", steps={
+            -- add steps
+        }},
+        ['47'] = { name="Whispers of Dawn", steps={
+            -- add steps
+        }},
+        ['48'] = { name="A Dreamy Interlude", steps={
+            -- add steps
+        }},
+        ['49'] = { name="Cait in the Woods", steps={
+            -- add steps
+        }},
+        ['50'] = { name="Fork in the Road", steps={
+            -- add steps
+        }},
+        ['51'] = { name="Maiden of the Dusk", steps={
+            -- add steps
+        }},
+        ['52'] = { name="Where It All Began", steps={
+            -- add steps
+        }},
+        ['53'] = { name="A Token of Troth", steps={
+            -- add steps
+        }},
+        ['54'] = { name="Lest We Forget", steps={
             -- add steps
         }},
     },
