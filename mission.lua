@@ -1011,10 +1011,13 @@ local MISSIONS = {
     ---------------------------------------------------------------------------
     wotg = {
         ['1']  = { name="Cavernous Maws", steps={
-            -- add steps
+            "Examine any one Cavernous Maw:",
+            "Sauromugue Champaign (J-10)",
+            "Batallia Downs (H-5)",
+            "Rolanberry Fields (H-6)",
         }},
         ['2']  = { name="Back to the Beginning", steps={
-            -- add steps
+            "Complete your nation's alliance quest — use /mission quest 1 for steps",
         }},
         ['3']  = { name="Cait Sith", steps={
             -- add steps
@@ -1176,6 +1179,86 @@ local MISSIONS = {
 }
 
 ------------------------------------------------------------------------
+-- WotG nation quest chains
+------------------------------------------------------------------------
+
+local QUESTS = {
+    ---------------------------------------------------------------------------
+    sandy = {
+        [1] = { name="Steamed Rams", steps={
+            "Talk to Mainchelite in Southern San d'Oria (S) at I-9, turn in Red recommendation letter",
+            "East Ronfaure (S): collect Charred propeller (H-8 dirt hole), Oxidized plate (I-8 near waterfall), Piece of shattered lumber (J-7 bush by tree)",
+            "Return to Mainchelite",
+        }},
+        [2] = { name="Gifts of the Griffon", steps={
+            "Talk to Louxiard in Southern San d'Oria (S) at G-7 for a cutscene",
+            "Leave the area and return to Louxiard for another cutscene",
+            "Talk to Rholont at E-7",
+            "Trade Plumes d'Or to 7 NPCs: Machionage (C-6), Louxiard (G-7), Illeuse (H-9), Rongelouts N Distaud (I-9), Sabiliont (I-11), Elnonde (K-9), Loillie (K-9 via stairs at L-8)",
+            "Return to Rholont",
+        }},
+        [3] = { name="Claws of the Griffon", steps={
+            "Wait one game day after Gifts of the Griffon",
+            "Talk to Rholont in Southern San d'Oria (S) at E-7 for a cutscene",
+            "Leave and return, speak with Rholont again",
+            "Travel to Jugner Forest (S) via East Ronfaure (S) — cutscene on entry",
+            "Go to I-6, examine ??? on tree stump for a cutscene",
+            "Defeat Fingerfilcher Dradzad (Orc Warrior — immune to sleep)",
+            "Examine ??? again for final cutscene",
+        }},
+    },
+    ---------------------------------------------------------------------------
+    bastok = {
+        [1] = { name="The Fighting Fourth", steps={
+            "Talk to Adelbrecht in Bastok Markets (S) at E-9, turn in Blue recommendation letter to get Battle rations",
+            "North Gustaberg (S): ascend Zegham Hill around I-8, talk to Gebhardt at I-6 for a cutscene",
+            "Head to E-11, speak with Roderich",
+            "Go to E-7, interact with the Barricade for a cutscene",
+            "Return to Adelbrecht",
+        }},
+        [2] = { name="Better Part of Valor", steps={
+            "Exit Bastok Markets (S) into North Gustaberg (S) at G-4 for a cutscene — receive Clump of animal hair",
+            "Deliver it to Engelhart at the Music Shop in Bastok Markets (S) at K-10",
+            "Go to the waterfall in North Gustaberg (S) at F-8, examine ??? on the right side",
+            "Obtain a Gnole Claw from the Auction House (Materials > Bonecraft)",
+            "Vunkerl Inlet (S): trade Gnole Claw to goblin Leadavox at J-6 for Xhifhut key item",
+            "Return to Engelhart in Bastok Markets (S)",
+        }},
+        [3] = { name="Fires of Discontent", steps={
+            "Talk to Engelhart in Bastok Markets (S) at K-10",
+            "Speak with Pagdako in Bastok Markets (S) at H-9",
+            "Go to present-day Metalworks, speak with Iron Eater in the President's Office at J-8 (possibly multiple times)",
+            "Return to the past and speak with Engelhart again",
+            "Grauberg (S): find ??? inside the cave at I-6 for a cutscene",
+            "Return to Bastok Markets (S) and speak with Engelhart",
+            "Head to the Metalworks gate area and speak with Gentle Tiger",
+            "Return to Engelhart to complete",
+        }},
+    },
+    ---------------------------------------------------------------------------
+    windurst = {
+        [1] = { name="Snake on the Plains", steps={
+            "Talk to Miah Riyuh in Windurst Waters (S) at H-9, exchange Green recommendation letter for putty",
+            "West Sarutabaruta (S): apply putty to sealed entrances at F-4, F-11, and J-8",
+            "Return to Miah Riyuh",
+        }},
+        [2] = { name="The Tigress Stirs", steps={
+            "Visit Windurst Waters (S) for a cutscene — receive Inky black Yagudo feather",
+            "Talk to Dhea Prandoleh in Windurst Waters (S) at H-10",
+            "West Sarutabaruta (S): check ??? at Starfall Hillock at I-6 for Small starfruit key item",
+            "Check the door to Acolyte Hostel in Windurst Waters (S) at K-5",
+        }},
+        [3] = { name="The Tigress Strikes", steps={
+            "Speak with Dhea Prandoleh in Windurst Waters (S) at H-10",
+            "Fort Karugo-Narugo (S): find Rotih Moalghett on the second floor for a cutscene",
+            "Exit the fortress, examine ??? at I-9 for a cutscene — then fight War Lynx (~7,000 HP, resists Thunder)",
+            "Examine ??? again after the fight for a cutscene",
+            "Return to Dhea Prandoleh for final cutscene and reward (Star Globe)",
+        }},
+    },
+}
+
+------------------------------------------------------------------------
 -- Line name aliases and display names
 ------------------------------------------------------------------------
 
@@ -1221,7 +1304,7 @@ local function msg(text)
     print('\31\200[Mission]\31\01 ' .. text)
 end
 
-local function show_mission(line, num)
+local function show_mission(line, num, branch)
     local tbl = MISSIONS[line]
     if not tbl then
         msg('Unknown mission line: ' .. line)
@@ -1232,11 +1315,59 @@ local function show_mission(line, num)
         msg(LINE_NAMES[line] .. ' ' .. num .. ': no data yet.')
         return
     end
-    if #entry.steps == 0 then
-        msg(LINE_NAMES[line] .. ' ' .. num .. ' - ' .. entry.name .. ': no steps added yet.')
+
+    if branch then
+        if not entry.branches or not entry.branches[branch] then
+            msg('Unknown branch: ' .. branch)
+            if entry.branches then
+                local avail = {}
+                for k in pairs(entry.branches) do table.insert(avail, k) end
+                table.sort(avail)
+                msg('Available branches: ' .. table.concat(avail, '  '))
+            end
+            return
+        end
+        local b = entry.branches[branch]
+        msg(LINE_NAMES[line] .. ' ' .. num .. ' - ' .. entry.name .. ' [' .. b.name .. ']')
+        for i, step in ipairs(b.steps) do
+            msg('  ' .. i .. '. ' .. step)
+        end
         return
     end
-    msg(LINE_NAMES[line] .. ' ' .. num .. ' - ' .. entry.name)
+
+    if #entry.steps == 0 then
+        msg(LINE_NAMES[line] .. ' ' .. num .. ' - ' .. entry.name .. ': no steps added yet.')
+    else
+        msg(LINE_NAMES[line] .. ' ' .. num .. ' - ' .. entry.name)
+        for i, step in ipairs(entry.steps) do
+            msg('  ' .. i .. '. ' .. step)
+        end
+    end
+    if entry.branches then
+        local avail = {}
+        for k in pairs(entry.branches) do table.insert(avail, k) end
+        table.sort(avail)
+        msg('  Branches: /mission ' .. line .. ' ' .. num .. ' ' .. table.concat(avail, '|'))
+    end
+end
+
+local function show_quest(nation, num)
+    local tbl = QUESTS[nation]
+    if not tbl then
+        msg('No quest data for: ' .. tostring(nation))
+        return
+    end
+    local n = tonumber(num)
+    if not n then
+        msg('Quest number must be a number. Example: /mission quest 1')
+        return
+    end
+    local entry = tbl[n]
+    if not entry then
+        msg(LINE_NAMES[nation] .. ' quest ' .. n .. ': no data yet.')
+        return
+    end
+    msg(LINE_NAMES[nation] .. ' Quest ' .. n .. ' - ' .. entry.name)
     for i, step in ipairs(entry.steps) do
         msg('  ' .. i .. '. ' .. step)
     end
@@ -1248,6 +1379,8 @@ end
 -- /mission <line> <num>       -- e.g. /mission sandy 1-1
 -- /mission roz 5
 -- /mission cop 2-3
+-- /mission quest <num>        -- WotG nation quest (home nation)
+-- /mission quest <nation> <num>
 ------------------------------------------------------------------------
 
 ashita.events.register('command', 'mission_command', function(e)
@@ -1260,20 +1393,39 @@ ashita.events.register('command', 'mission_command', function(e)
         msg('Usage: /mission <num>  OR  /mission <line> <num>')
         msg('Nation lines: sandy  bastok  windurst')
         msg('Expansion lines: roz  cop  toau  wotg')
-        msg('Example: /mission 2-3   |   /mission sandy 2-3   |   /mission roz 5')
+        msg('WotG nation quests: /mission quest <num>  OR  /mission quest <nation> <num>')
+        msg('Example: /mission 2-3   |   /mission sandy 2-3   |   /mission roz 5   |   /mission quest 1')
         return
     end
 
     local a2   = args[2]:lower()
     local line = ALIASES[a2]
 
-    if line then
+    if a2 == 'quest' or a2 == 'q' then
+        local nation_arg = args[3] and ALIASES[args[3]:lower()]
+        local num_arg
+        if nation_arg then
+            num_arg = args[4]
+        else
+            nation_arg = get_home_nation()
+            num_arg = args[3]
+        end
+        if not nation_arg then
+            msg("Could not detect home nation. Use: /mission quest sandy 1")
+            return
+        end
+        if not num_arg then
+            msg('Specify a quest number. Example: /mission quest 1  |  /mission quest sandy 2')
+            return
+        end
+        show_quest(nation_arg, num_arg)
+    elseif line then
         -- /mission sandy 2-3  or  /mission roz 5
         if #args < 3 then
             msg('Specify a mission number. Example: /mission ' .. a2 .. ' 1-1')
             return
         end
-        show_mission(line, args[3])
+        show_mission(line, args[3], args[4] and args[4]:lower() or nil)
     else
         -- /mission 2-3  (no line specified — use player's home nation)
         local nation = get_home_nation()
