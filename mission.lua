@@ -1020,160 +1020,296 @@ local MISSIONS = {
             "Complete your nation's alliance quest — use /mission quest 1 for steps",
         }},
         ['3']  = { name="Cait Sith", steps={
-            -- add steps
+            "Complete nation quests: Bastok (Light in the Darkness, Burden of Suspicion), San d'Oria (Boy and the Beast, Wrath of the Griffon), or Windurst (Knot Quite There, A Manifest Problem)",
+            "Enter Southern San d'Oria [S] by walking from East Ronfaure [S] — cannot use Home Point or Survival Guide",
+            "Cutscene triggers upon zoning in; mission complete",
         }},
         ['4']  = { name="The Queen of the Dance", steps={
-            -- add steps
+            "Auto-triggered at end of Cait Sith",
+            "Touch the door of Lion Springs Tavern (K-6) in Southern San d'Oria [S] for a cutscene",
+            "If door is locked: zone in via East Ronfaure [S] or complete Nation Quests 3 and 4",
+            "Travel to Upper Jeuno and speak with Turlough (G-7) to receive Mayakov show ticket (key item)",
+            "Return to Lion Springs Tavern (K-6) in Southern San d'Oria [S] and touch door again for final cutscene",
         }},
         ['5']  = { name="While the Cat is Away", steps={
-            -- add steps
+            "Auto-triggered at end of The Queen of the Dance",
+            "Travel to East Ronfaure [S] from Southern San d'Oria [S] to trigger cutscene",
+            "Cutscene only — mission completes at end of sequence",
         }},
         ['6']  = { name="A Timeswept Butterfly", steps={
-            -- add steps
+            "Zone into La Vaule [S] for a cutscene — mission completes automatically",
+            "Fastest route: Survival Guide to Jugner Forest [S], then zone at (G-11); or use Campaign Arbiter warp",
         }},
         ['7']  = { name="Purple, The New Black", steps={
-            -- add steps
+            "Cutscene triggers upon entering La Vaule [S]",
+            "Navigate to Reinforced Gateway at (F-9) in La Vaule [S] and examine for a cutscene",
+            "Examine Reinforced Gateway again to enter BCNM battle vs. Galarhigg",
+            "All buffs expire on entry — summon Trusts after zoning in",
+            "Defeat Galarhigg; can inflict Petro Eyes (petrify) — mission completes on victory",
         }},
         ['8']  = { name="In the Name of the Father", steps={
-            -- add steps
+            "Auto-triggered after completing Purple, The New Black BCNM",
+            "Complete nation quests: Bastok (Storm on the Horizon + Fire in the Hole), San d'Oria (Perils of the Griffon + In a Haze of Glory), Windurst (When One Man Is Not Enough + A Feast for Gnats)",
+            "Examine door of Lion Springs Tavern (K-6) in Southern San d'Oria [S] for cutscene",
         }},
         ['9']  = { name="Dancers in Distress", steps={
-            -- add steps
+            "Speak to Raustigne in Southern San d'Oria [S] at (I-7/8) for a cutscene",
+            "Examine Elegant Footprints in Jugner Forest [S] at (I-6) for a cutscene",
+            "Retrieve one item based on cutscene choice: Gold Beastcoin, Lynx Meat, or Nyumomo Doll (farm in Batallia Downs)",
+            "Zone out, then trade the retrieved item to the Elegant Footprints for final cutscene",
         }},
         ['10'] = { name="Daughter of a Knight", steps={
-            -- add steps
+            "Speak to Amaura in Southern San d'Oria [S] HP #4 at (G-6); she requests a Cernunnos Bulb",
+            "Kill Wandering Saplings in Jugner Forest [S] to obtain a Cernunnos Bulb if needed",
+            "Trade the Cernunnos Bulb to Amaura for a cutscene",
+            "Trade the Cernunnos Bulb to Humus-rich Earth in Jugner Forest [S] at (E-6) to plant it",
+            "Travel to present-day Jugner Forest and examine the Humus-rich Earth at same location for cutscene",
+            "Examine Humus-rich Earth again to spawn Treant NM Cernunnos (uses Protect IV, Shell IV, Stone IV, Stonega III)",
+            "Defeat Cernunnos, then examine Humus-rich Earth to obtain Cernunnos resin (key item)",
+            "Return to Amaura with key item for cutscene",
+            "Wait one game day, zone, then speak to Amaura to receive Bottle of treant tonic and complete mission",
         }},
         ['11'] = { name="A Spoonful of Sugar", steps={
-            -- add steps
+            "Head to Victory Gate at (I-7) in Southern San d'Oria [S] and speak with Raustigne for a cutscene",
         }},
         ['12'] = { name="Affairs of State", steps={
-            -- add steps
+            "Travel to Bastok Markets [S] and speak to Radford near the Metalworks at (H-6)",
+            "Travel to Windurst Waters [S] and speak to Velda-Galda in the northern section at (K-9) near the Windurst Walls zoneline",
+            "After speaking with both, automatically receive Count Borel's letter (key item) — mission complete",
         }},
         ['13'] = { name="Borne by the Wind", steps={
-            -- add steps
+            "Go to Sauromugue Champaign [S] and examine the Bulwark Gate at (E-6/F-6) for a cutscene",
+            "Receive the Underpass hatch key (key item) — mission complete",
+            "Route: Campaign Arbiter warp or Survival Guide warp to Rolanberry Fields, then head to gate",
+            "Choose the first dialogue option to progress (second option is optional text only)",
         }},
         ['14'] = { name="A Nation on the Brink", steps={
-            -- add steps
+            "Examine the Underpass Hatch in Batallia Downs [S] at (J-9/K-9) for a cutscene; hatch is on a rampart inside a tower",
+            "Examine the Underpass Hatch again to enter Everbloom Hollow (instance battlefield, max 6 players; leader must hold the key)",
+            "Defeat three beastmen waves: Quadavs (NW), Orcs (NE), Yagudo (S)",
+            "Defeat One-eyed Gwajboj (Paladin boss, uses Invincible multiple times)",
+            "Receive cutscene and Jeunoan Flag reward; if inventory full, retrieve from ??? on barrels north of entrance",
         }},
         ['15'] = { name="Crossroads of Time", steps={
-            -- add steps
+            "Complete prerequisite national quest for your nation (Bastok, San d'Oria, or Windurst)",
+            "Zone into Southern San d'Oria [S] from East Ronfaure [S] for a cutscene — no further action required",
         }},
         ['16'] = { name="Sandswept Memories", steps={
-            -- add steps
+            "Interact with the door of Lion Springs Tavern at (K-6) in Southern San d'Oria [S] for a cutscene",
         }},
         ['17'] = { name="Northland Exposure", steps={
-            -- add steps
+            "Zone into Beaucedine Glacier [S] for a cutscene — mission completes automatically",
+            "Route: Walk NW through Batallia Downs [S] and enter tunnel at (E-4), or use Campaign Arbiter warp",
         }},
         ['18'] = { name="Traitor in the Midst", steps={
-            -- add steps
+            "Plant shadow bugs on 5 Cait Siths in Beaucedine Glacier [S] via minigames at each tower",
+            "Cait Sith Coig (J-8): Hit with blow dart while it moves in a random pattern",
+            "Cait Sith Seachd (I-7): Direct Lilisette in Red Light/Green Light until she can plant the bug",
+            "Cait Sith Ceithir (G-9): Direct Portia in Red Light/Green Light until she can plant the bug",
+            "Cait Sith Aon (H-8): Play Red Light/Green Light in first-person view",
+            "Cait Sith Tri (F-7): Transform into baby chocobo, sneak within 1 minute; chirp/wiggle to attract, then Stun",
+            "Return to Regal Pawprints at (H-10) under broken tree branch near tower after all 5 bugs planted",
         }},
         ['19'] = { name="Betrayal at Beaucedine", steps={
-            -- add steps
+            "Examine Regal Pawprints at (H-9) in Beaucedine Glacier [S] for a cutscene",
+            "Examine Regal Pawprints a second time to spawn Count Halphas and 4 Dark Demons",
+            "Defeat Count Halphas — Dark Demons vanish when he falls; can be slept, but Halphas is immune to sleep",
+            "Examine Regal Pawprints again for final cutscene",
         }},
         ['20'] = { name="On Thin Ice", steps={
-            -- add steps
+            "Speak to Raustigne at (I-7) in Southern San d'Oria [S] for a cutscene",
         }},
         ['21'] = { name="Proof of Valor", steps={
-            -- add steps
+            "Collect signatures from NPCs in Southern San d'Oria [S]: Aissaville (I-7), Illeuse (H-9), Daigraffeaux (I-11), Andagge (H-9), Louxiard (G-7), Machionage (C-6), Remiotte (L-10), Elnonde (K-9), Loillie (K-9), Mailleronce (M-6)",
+            "Answer questions from Farouel (K-7) about Smilodons/Tauri/Ghosts for up to 6 signatures",
+            "Answer questions from Vichauxdat (I-8) about Gutrenders/Grradhod for up to 6 signatures",
+            "Answer questions from Aurfet (G-9, upper level) about noble names/knight groups for up to 6 signatures",
+            "Answer questions from Corseihaut (F-6) about war topics for up to 6 signatures",
+            "Trade Orcish Axe (5 sigs), Orc Helm (10 sigs), or Gold Orcmask (15 sigs) to Coucheutand (I-8)",
+            "Trade 1-4 stacks of Crossbow Bolts to Hauberliond (H-9) for up to 12 signatures",
+            "Trade 3-8 stacks of Gysahl Greens to Sabiliont (I-11) for up to 12 signatures",
+            "Obtain Gnole Claw, trade to Rongelouts N Distaud (I-9) for 35 sigs, then win 3 rounds of Rock-Paper-Scissors",
+            "Once you have at least 20 signatures, speak to Raustigne (I-7) for cutscene confirmation",
         }},
         ['22'] = { name="A Sanguinary Prelude", steps={
-            -- add steps
+            "Zone into Beaucedine Glacier [S] for a cutscene — mission completes automatically",
         }},
         ['23'] = { name="Dungeons and Dancers", steps={
-            -- add steps
+            "Examine Regal Pawprints at (G-9, east side, high ground) in Beaucedine Glacier [S] for a cutscene",
+            "Examine Regal Pawprints again to enter Everbloom Hollow battlefield (30-minute time limit)",
+            "Each party member receives 2 Ratstail Explosives and jars of Firesand at start",
+            "From NW start, hug right wall and blow up wall at (H/I-9); proceed north to (H-8) wall",
+            "Kill Goblin Reaver to get 3 more Ratstail Explosives from the ??? it leaves",
+            "Blow up SE wall at (I-9); proceed NE to dead-end at (J-7)",
+            "Examine ??? at (J-7) for cutscene; place Firesand jar at dead-end",
+            "Return to (H-8) opening, go to (H-7/I-7) and trigger the green switch",
+            "Return to (J-7) and pass through where wall was to enter Map 2 (keep at least 2 explosives)",
+            "On Map 2: blow up SE wall at (G-8/9), travel east, blow up wall at (I-9)",
+            "Continue SE and examine blue warp ??? to exit and complete mission",
         }},
         ['24'] = { name="Distorter of Time", steps={
-            -- add steps
+            "Head north from Beaucedine Glacier [S] Campaign Arbiter to (H-7)",
+            "Find and enter the hole in the ground at bottom-right of the H-7 square (transports to Ruhotz Silvermines)",
+            "Examine the Regal Pawprints to initiate the battle (30-minute time limit)",
+            "Defeat Cait Sith Ceithir with Lilisette assisting — she must survive",
+            "If you fail: obtain another Umbra bug (key item) from Regal Pawprint at H-10 (once per game day)",
         }},
         ['25'] = { name="The Will of the World", steps={
-            -- add steps
+            "Speak to Raustigne at (I-7) in Southern San d'Oria [S] for a cutscene",
         }},
         ['26'] = { name="Fate in Haze", steps={
-            -- add steps
+            "Complete a national storyline quest: Bastok (Beneath the Mask or What Price Loyalty), San d'Oria (Songbirds in a Snowstorm or Blood of Heroes), Windurst (Sins of the Mothers or Howl from the Heavens)",
+            "Examine the door of Lion Springs Tavern at (K-6) in Southern San d'Oria [S] for a cutscene",
         }},
         ['27'] = { name="The Scent of Battle", steps={
-            -- add steps
+            "Examine the door of Lion Springs Tavern at (K-6) in Southern San d'Oria [S] for a cutscene",
+            "Examine the Bulwark Gate in Sauromugue Champaign [S] at (F-6) for a second cutscene",
         }},
         ['28'] = { name="Another World", steps={
-            -- add steps
+            "Zone into Southern San d'Oria (present day) from East Ronfaure for a cutscene",
+            "Travel to Chateau d'Oraguille at (I-9) and speak with Halver",
+            "If Halver sends you to Rahal first, complete The Voracious Resurgence Mission 3-1 then return",
         }},
         ['29'] = { name="A Hawk in Repose", steps={
-            -- add steps
+            "Buy a Lilac (120 gil) from Areebah at M&P's Market in Upper Jeuno HP #1 (E-6) — buy two for later",
+            "Travel to Batallia Downs and examine the Weathered Gravestone at (I-10) on the hill for a cutscene",
+            "Trade the Lilac to the Weathered Gravestone to complete the mission",
         }},
         ['30'] = { name="The Battle of Xarcabard", steps={
-            -- add steps
+            "Zone into Xarcabard [S] for a cutscene",
+            "Examine the Rally Point: Red at (F-8) near the sparkling blank target spot",
         }},
         ['31'] = { name="Prelude to a Storm", steps={
-            -- add steps
+            "Examine Rally Point: Green at (G-9) in Xarcabard [S] for a cutscene; receive Magelight signal flare (key item)",
+            "Examine Spell-worked Snow SE of Rally Point to enter the battlefield",
+            "Speak to Pesoso inside to begin three waves of weak mobs",
+            "Defeat Wave 1 — last mob flees and detonates",
+            "Defeat Wave 2 — last mob flees and detonates",
+            "Defeat Wave 3 — contains three Arch Demons plus weaker enemies; eliminate all",
+            "Return to Pesoso in the third room to exit; reward type depends on completion time",
         }},
         ['32'] = { name="Storm's Crescendo", steps={
-            -- add steps
+            "Examine Rally Point: Blue at (H-8) in Xarcabard [S] to receive Alchemical signal flare (key item; once per Vana'diel day)",
+            "Examine Excavated Snow to enter the Storm's Crescendo battlefield",
+            "Speak to Antje inside to begin the operation",
+            "Reach all 24 Republic Operatives while maintaining Flee status and let each detonate their charge",
+            "Refresh Flee by speaking to each operative; or use Powder Boots/Flee job ability if it expires",
+            "Avoid fighting Tiger mobs — they do not strip Flee",
+            "Follow a counter-clockwise circuit; watch for smoke flashes to locate next operative",
+            "After all 24 charges detonate, report to Captain Antje to complete the mission",
+            "Check Rally Point: Red at (F-8) for a final cutscene",
         }},
         ['33'] = { name="Into the Beast's Maw", steps={
-            -- add steps
+            "Examine Rally Point: Red at (F-8) in Xarcabard [S] for a cutscene",
+            "Enter Castle Zvahl Baileys [S] for a cutscene; pick up the Survival Guide inside",
+            "Examine Peculiar Glint at (G-7) for a cutscene; receive Distress signal flare (key item)",
+            "Examine Peculiar Glint again to enter the battlefield vs. Count Bifrons and 4 Orcs",
+            "Defeat Count Bifrons (sleep the Orcs first if desired) to complete mission",
         }},
         ['34'] = { name="The Hunter Ensnared", steps={
-            -- add steps
+            "Examine the Rally Point: Red at (F-8) in Xarcabard [S] — cutscene only, no battle required",
         }},
         ['35'] = { name="Flight of the Lion", steps={
-            -- add steps
+            "Examine the Bulwark Gate in Sauromugue Champaign [S] at (F-6) for a cutscene with Operation Snowstorm survivors",
         }},
         ['36'] = { name="Fall of the Hawk", steps={
-            -- add steps
+            "Enter Castle Zvahl Baileys [S] for a cutscene (use the Survival Guide warp for fastest access)",
         }},
         ['37'] = { name="Darkness Descends", steps={
-            -- add steps
+            "Progress through Castle Zvahl Baileys [S] and Castle Zvahl Keep [S], then zone into Throne Room [S] for a cutscene",
+            "Click the Throne Room door to initiate the BCNM 'Darkness Descends'",
+            "Fight Aquila and Haudrale — Lilisette joins automatically after ~3 minutes",
+            "Defeat both enemies; mission fails if Lilisette falls in combat",
         }},
         ['38'] = { name="Adieu, Lilisette", steps={
-            -- add steps
+            "Complete national quest pairs: Bastok (The Truth Lies Hid + Bonds of Mythril), San d'Oria (Chasing Shadows + Face of the Future), Windurst (Manifest Destiny + At Journey's End)",
+            "Examine the door of Lion Springs Tavern at (K-6) in Southern San d'Oria [S] for a cutscene",
         }},
         ['39'] = { name="By the Fading Light", steps={
-            -- add steps
+            "Examine Rally Point: Red at (F-8) in Xarcabard [S] for a cutscene",
         }},
         ['40'] = { name="Edge of Existence", steps={
-            -- add steps
+            "Examine a Cavernous Maw in Sauromugue Champaign (J-10) for a cutscene",
+            "Examine a Cavernous Maw in Batallia Downs (H-5) for a cutscene",
+            "Examine a Cavernous Maw in Rolanberry Fields (H-6) for a cutscene",
         }},
         ['41'] = { name="Her Memories", steps={
-            -- add steps
+            "Complete sub-quest chain 'Her Memories: Homecoming Queen' (Old Bean, The Faux Pas, Grave Resolve) for 1st Large memory fragment",
+            "Complete 'Her Memories: Of Malign Maladies' for 2nd Large memory fragment (requires waiting one in-game day)",
+            "Complete 'Her Memories: Operation Cupid' for 3rd Large memory fragment",
+            "Complete nation quest: Carnelian Footfalls (San d'Oria), Azure Footfalls (Bastok), or Verdure Footfalls (Windurst) for 4th fragment",
+            "Return to Cait Sith with all four Large memory fragments to complete the mission",
         }},
         ['42'] = { name="Forget Me Not", steps={
-            -- add steps
+            "Examine a Cavernous Maw in Sauromugue Champaign (J-10) for a cutscene",
+            "Examine a Cavernous Maw in Batallia Downs (H-5) for a cutscene",
+            "Examine a Cavernous Maw in Rolanberry Fields (H-6) for a cutscene",
         }},
         ['43'] = { name="Pillar of Hope", steps={
-            -- add steps
+            "Unequip all weapons before proceeding",
+            "Travel to Grauberg [S] at (F-5) — Witchfire Glen — via Survival Guide or Campaign warp, then run northwest",
+            "Examine the Veridical Conflux at (F-5) for a cutscene",
         }},
         ['44'] = { name="Glimmer of Life", steps={
-            -- add steps
+            "Auto-triggered after the Pillar of Hope cutscene",
+            "Wait one in-game day, then zone and return to the Veridical Conflux in Grauberg [S] at (F-5) for a cutscene",
+            "While waiting, optionally farm Punch Bug for the next mission (Lou Carcolhs/Quadavs in Pashhow Marshlands [S] or Beadeaux [S])",
         }},
         ['45'] = { name="Time Slips Away", steps={
-            -- add steps
+            "Obtain a Punch Bug by defeating Lou Carcolhs, Ancient Quadavs, Gold Quadavs, or Vajra Quadavs in Pashhow Marshlands [S] or Beadeaux [S]",
+            "Travel to Grauberg [S] and examine the Veridical Conflux at (F-5)",
+            "Trade the Punch Bug to the Veridical Conflux for a cutscene; receive Bottled punch bug (key item)",
         }},
         ['46'] = { name="When Wills Collide", steps={
-            -- add steps
+            "Examine the Veridical Conflux in Grauberg [S] at (F-5) to enter Walk of Echoes",
+            "Examine the Ornate Door north of the conflux for a cutscene, then examine again to enter the battlefield",
+            "Defeat four Spitewardens: Monk (Hundred Fists), Paladin (Invincible + Banish), Dancer (Trance + heals), and weaponless mimic (Essence Jack)",
+            "Use Gravity to kite; prioritize the Dancer — it can dispel Gravity",
+            "If you fail, obtain another Punch Bug from the usual sources to retry",
         }},
         ['47'] = { name="Whispers of Dawn", steps={
-            -- add steps
+            "Unequip all weapons, then examine the Veridical Conflux in Grauberg [S] at (F-5) for a cutscene",
+            "Wait one game day, zone out, then return to the same Conflux for the next cutscene",
         }},
         ['48'] = { name="A Dreamy Interlude", steps={
-            -- add steps
+            "Examine the Veridical Conflux in Grauberg [S] at (F-5) for a cutscene",
+            "Wait until the next game day, then change zones and return for the follow-up cutscene",
         }},
         ['49'] = { name="Cait in the Woods", steps={
-            -- add steps
+            "Examine the Blank Target at (H-7) in the northwest corner of East Ronfaure [S] for a cutscene",
+            "Receive Ronfaure dawndrop (key item) upon completion",
         }},
         ['50'] = { name="Fork in the Road", steps={
-            -- add steps
+            "Ronfaure dawndrop is obtained automatically at mission start",
+            "Examine Blank Target in Jugner Forest [S] at (I-6) for Jugner dawndrop",
+            "Examine Blank Target in La Vaule [S] at (K-9) for La Vaule dawndrop",
+            "Examine Blank Target in Southern San d'Oria [S] at (K-6) near Lion Springs Tavern for San d'Oria dawndrop",
+            "Examine Blank Target in Beaucedine Glacier [S] at (H-9) for Beaucedine dawndrop",
+            "Examine Blank Target in Xarcabard [S] at (F-8) near Rally Point: Red for Xarcabard dawndrop",
+            "Examine Blank Target in Throne Room [S] (Castle Zvahl Keep [S] HP #1) for Throne Room dawndrop",
+            "Examine Blank Target in Walk of Echoes south of the conflux for Walk of Echoes dawndrop",
+            "All 8 dawndrops auto-combine into the Primal glow (key item) — mission complete",
         }},
         ['51'] = { name="Maiden of the Dusk", steps={
-            -- add steps
+            "Examine the Veridical Conflux in Grauberg [S] at (F-5) to enter Walk of Echoes (if Walk of Echoes was your last dawndrop, exit first then re-examine)",
+            "Examine the Ornate Door north of the conflux in Walk of Echoes for a cutscene, then examine again to enter Maiden of the Dusk battlechamber",
+            "Defeat Lilith (Form 1): AoE melee with knockback, enfeebling spells, Fatal Attraction charm during Trance",
+            "Cutscene plays after Form 1 — return to entry point to rest and rebuff",
+            "Defeat Lilith Ascendant (Form 2): summons Elemental Gyves with status effects, conal dark weaponskills",
+            "Avoid Dark Sun two-hour ability (announces before casting; ~15 yalm AoE death effect)",
+            "Watch 10-minute cutscene to complete the mission",
+            "After completion: purchase Maiden phantom gem (10 Merit Points) to access High-Tier Mission Battlefields version",
         }},
         ['52'] = { name="Where It All Began", steps={
-            -- add steps
+            "Examine the door of Lion Springs Tavern at (K-6) in Southern San d'Oria [S] for a cutscene",
+            "Receive Wedding invitation (key item)",
         }},
         ['53'] = { name="A Token of Troth", steps={
-            -- add steps
+            "Unequip your weapon, then examine the Bulwark Gate in Sauromugue Champaign [S] at (E-6) for a cutscene",
+            "Examine the Bulwark Gate again for a second cutscene — mission complete",
         }},
         ['54'] = { name="Lest We Forget", steps={
-            -- add steps
+            "Examine the Veridical Conflux in Grauberg [S] at (F-5) for a cutscene and receive your reward",
         }},
     },
 }
