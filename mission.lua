@@ -697,106 +697,252 @@ local MISSIONS = {
     ---------------------------------------------------------------------------
     cop = {
         ['1-1'] = { name="The Rites of Life", steps={
-            -- add steps
+            "Travel to Lower Delkfutt's Tower in Qufim Island for opening cutscene (Chapter 1 begins)",
+            "Zone into Upper Jeuno for another cutscene",
+            "Speak with Monberaux at the Infirmary, Upper Jeuno (G-10, near Home Point #3) — receive Mysterious Amulet",
         }},
         ['1-2'] = { name="Below the Arks", steps={
-            -- add steps
+            "Speak with Pherimociel at Ru'Lude Gardens (G-6) palace for cutscene",
+            "Enter each of the three Promyvions via Hall of Transference: Dem (Konschtat), Mea (Tahrongi), Holla (La Theine)",
+            "Click the Large Apparatus on first visit to each; progress through floors defeating Memory Receptacles",
+            "(Optional) Trade Recollection drops + 2,000 gil to Harith at Ru'Lude Gardens (H-5) for Animas to weaken bosses",
         }},
         ['1-3'] = { name="The Mothercrystals", steps={
-            -- add steps
+            "Enter Promyvion-Dem, Mea, and Holla via Shattered Telepoints at respective crags",
+            "Navigate 4 floors in each, defeating Memory Receptacles to open Memory Stream portals upward",
+            "Zone into Spire of Dem and defeat Progenerator for Light of Dem",
+            "Zone into Spire of Holla and defeat Wreaker for Light of Holla",
+            "Zone into Spire of Mea and defeat Delver for Light of Mea",
+            "After third boss, mission completes — Tavnazian Archipelago access unlocked",
         }},
         ['2-1'] = { name="An Invitation West", steps={
-            -- add steps
+            "Trigger cutscene at (K-9) in Lufaise Meadows upon arrival",
+            "Travel west to Tavnazian Safehold entrance at (F-10) — avoid Orcs, Gigas, Bugards (lv45+ recommended)",
+            "Zone into Tavnazian Safehold for final cutscene — mission complete",
         }},
         ['2-2'] = { name="The Lost City", steps={
-            -- add steps
+            "Speak with Despachiaire through Walnut Door at (K-10) top floor of Tavnazian Safehold for cutscene",
+            "(Optional) Speak with Justinius at (J-6) for additional dialogue",
+            "Travel to bottom floor and examine Sewer Entrance at (I-7) — mission complete",
         }},
         ['2-3'] = { name="Distant Beliefs", steps={
-            -- add steps
+            "Enter Phomiuna Aqueducts via sewer entrance in Tavnazian Safehold",
+            "Use Sneak+Invisible; navigate to Minotaur at Map 2 (J-2) via ladder (F-6) Map 1, drop at (K-10)",
+            "Defeat Minotaur boss (uses Mortal Ray -> Doom; avoid facing tanks directly toward it)",
+            "Obtain Bronze Key from Fomors (or use Skeleton Key) to open Iron Gate at Map 2 (G-8)",
+            "Click Wooden Ladder at (E-8) for cutscene with Nag'molada",
+            "Locate ??? on southwest bookshelf to open wall-door; light oil lamps matching current Vana'diel day element to open west door",
+            "Proceed to second Ornate Gate for cutscene",
+            "Exit and speak with Justinius at (J-6) top floor of Tavnazian Safehold — mission complete",
         }},
         ['2-4'] = { name="An Eternal Melody", steps={
-            -- add steps
+            "Check north Walnut Door at (K-7) top floor of Tavnazian Safehold — cutscene, receive Mysterious Amulet",
+            "(Optional) Speak with Justinius at (J-6) for Ulmia's location",
+            "Travel to Dilapidated Gate at (I-11) in Misareaux Coast (Snowmint Point) for cutscene",
+            "Return to Tavnazian Safehold and approach bridge at (H/I-8) main floor for final cutscene — mission complete",
         }},
         ['2-5'] = { name="Ancient Vows", steps={
-            -- add steps
+            "Check Dilapidated Gate at Misareaux Coast (F-7) for cutscene",
+            "Check Spatial Displacement ahead — transport to Riverne - Site #A01",
+            "Defeat Firedrakes for 2x Giant Scales (use Prism Powder; avoid True-Sight Hippogryphs)",
+            "Trade 1 Giant Scale to Unstable Displacement at (G-10) to pass through (time-limited)",
+            "Trade 2nd Giant Scale to Unstable Displacement at (E-10) to pass through",
+            "Head north through displacement into Monarch Linn",
+            "Enter battlefield 'Ancient Vows'; defeat 3 Mammett-19 Epsilon bosses (~3,800 HP each, form-changing)",
         }},
         ['3-1'] = { name="The Call of the Wyrmking", steps={
-            -- add steps
+            "After Mammett fight, arrive at South Gustaberg near Lighthouse",
+            "Travel to Port Bastok Airship Dock and approach Departures Entrance (F-7) for cutscene",
+            "Speak with Cid on 2nd floor of Metalworks (H-8) for final cutscene — mission complete",
         }},
         ['3-2'] = { name="A Vessel Without a Captain", steps={
-            -- add steps
+            "Click the door to Tenshodo HQ in Neptune's Spire, Lower Jeuno (F-7) for cutscene",
+            "Travel to Ru'Lude Gardens (H-7) and approach Audience Chamber stairs for cutscene — mission complete",
         }},
         ['3-3'] = { name="The Road Forks", steps={
-            -- add steps
+            "[San d'Oria] Speak with Arnau at Cathedral altar (M-6), then Chasalvige in Manuscript Room (L-6) for cutscene",
+            "[San d'Oria] Travel to Carpenters' Landing via Jugner Forest (E-6); speak with Guilloud (H-10) to spawn NM Overgrown Ivy",
+            "[San d'Oria] Defeat Overgrown Ivy (Malboro-type, uses Hundred Fists); speak with Guilloud, then Hinaree at S.San d'Oria Count's Manor (B-6) upstairs",
+            "[Windurst] Speak with Ohbiru-Dohbiru at Rhinostery (J-9), then Yoran-Oran at Windurst Walls (E-5), then Kyume-Romeh at Tavern (F-10)",
+            "[Windurst] Obtain Cracked Mimeo Mirror from Honoi-Gomoi at Windurst Waters (E-7) upstairs; return to Yoran-Oran",
+            "[Windurst] In Attohwa Chasm, click Loose Sand at (K-8) to spawn NM Lioumere (lv55 Antlion); defeat for Mimeo Jewel",
+            "[Windurst] Climb Parradamo Tor within 30 min to Cradle of Rebirth; collect 3 Mimeo Feathers",
+            "[Windurst] Return to Yoran-Oran (E-5) -> Yujuju at Port Windurst (M-6) -> Tosuka-Porika at Optistery (G-8) -> Yoran-Oran again",
+            "Speak with Cid at Metalworks (Home Point #1) — mission complete",
         }},
         ['3-4'] = { name="Tending Aged Wounds", steps={
-            -- add steps
+            "Zone into Lower Jeuno for cutscene",
+            "Enter Neptune's Spire and click door to Tenshodo HQ for cutscene — mission complete",
         }},
         ['3-5'] = { name="Darkness Named", steps={
-            -- add steps
+            "Speak with Monberaux at Infirmary, Upper Jeuno (G-10)",
+            "Speak with Ghebi Damomohe inside Neptune's Spire, Lower Jeuno",
+            "Farm colored chips (Gray/Cyan/Carmine) from Pso'Xja monsters; trade to Ghebi for 500 gil + Pso'Xja Pass",
+            "Enter Pso'Xja at Beaucedine Glacier (H-8); pass colored walls Red->Black->Red->Black at (H-7)/(I-7)",
+            "Take elevator at (H-8) down; follow northwest path to Stone Gate leading to The Shrouded Maw",
+            "Register Home Point inside; check Memento Circle and enter battlefield 'Darkness Named'",
+            "Defeat Diabolos; return to Monberaux in Upper Jeuno — mission complete",
         }},
         ['4-1'] = { name="Sheltering Doubt", steps={
-            -- add steps
+            "Zone into Tavnazian Safehold (Home Point #3) for opening cutscene (Chapter 4 begins)",
+            "Speak with Despachiaire behind Walnut Door at (K-10) top floor",
+            "Travel to Misareaux Coast and check Dilapidated Gate at (I-11) SW corner for cutscene — mission complete",
         }},
         ['4-2'] = { name="The Savage", steps={
-            -- add steps
+            "Check Dilapidated Gate at Misareaux Coast (F-7) — cutscene, transport to Riverne - Site B01",
+            "Farm 1 Giant Scale from wyverns in the area if not already held",
+            "Travel SW through Riverne B01; trade Giant Scale to Unstable Displacement at (G-8) to pass",
+            "Navigate NW then south through displacements into uncapped Monarch Linn",
+            "Examine Spatial Displacement and enter battlefield 'The Savage'; buff inside",
+            "Defeat Ouryu — use Mistmelts to ground her when she flies (highly recommended)",
+            "Speak with Justinius at (J-6) in Tavnazian Safehold — mission complete",
         }},
         ['4-3'] = { name="The Secrets of Worship", steps={
-            -- add steps
+            "Check Walnut Door at (K-7) in Tavnazian Safehold for cutscene",
+            "Travel to Misareaux Coast (G-4) and check Iron Gate to enter Sacrarium",
+            "On Map 2: obtain 2x Coral Crest Keys from Fomors + 1x Sealion Crest Key from NM Keremet (spawns 20:00-04:00)",
+            "Trade both keys to double-keyhole door at Map 2 (H-7) to open it",
+            "Check Wooden Gate at (G-8) for cutscene; return through keyhole door",
+            "Locate Old Professor Mariselle via ??? on desks in six classrooms; defeat her and 2 Pupil adds",
+            "All party members check ??? for Reliquiarium key",
+            "Return to Wooden Gate at (G-8) for final cutscene — mission complete",
         }},
         ['4-4'] = { name="Slanderous Utterings", steps={
-            -- add steps
+            "Approach Despachiaire through Walnut Door at (K-10) top floor of Tavnazian Safehold for cutscene",
+            "Travel to bottom floor (Home Point #2) and zone into Sealion's Den",
+            "Check Iron Gate in Sealion's Den for cutscene — mission complete",
         }},
         ['5-1'] = { name="The Enduring Tumult of War", steps={
-            -- add steps
+            "(Optional) Speak with Despachiaire (K-10), Parelbriaux (K-7), and Odeya (J-10) in Tavnazian Safehold",
+            "Zone into Port Bastok for cutscene; speak with Cid in Metalworks (H-8) for cutscene",
+            "Travel to Nue Tower at Beaucedine Glacier (F-7) and enter uncapped Pso'Xja",
+            "Check Stone Door at (H-8) — spawns NM Nunyunuwi (Golem, ~3,800 HP, high Regen); defeat it",
+            "Check stone door again; take elevator down in next room",
+            "Follow path to another Stone Door — cutscene, zone into Promyvion-Vahzl — mission complete",
         }},
         ['5-2'] = { name="Desires of Emptiness", steps={
-            -- add steps
+            "Navigate Promyvion-Vahzl floors 1-2 via Memory Receptacles as normal",
+            "Floor 3: defeat NM Propagator at Memory Flux (J-8); check Flux for cutscene; find Receptacle for floor 4",
+            "Floor 4: defeat NM Solicitor at Memory Flux (M-6); check Flux; advance to floor 5",
+            "Floor 5: defeat NM Ponderer at Memory Flux (D-6); check Flux for cutscene",
+            "Zone into Spire of Vahzl at (F-8); rest and prepare",
+            "Enter battlefield 'Desires of Emptiness'; defeat Procreator, Cumulator, and Agonizer",
+            "Return to Metalworks and speak with Cid — receive Light of Vahzl, mission complete",
         }},
         ['5-3'] = { name="Three Paths", steps={
-            -- add steps
+            "Speak with Cid in Bastok Metalworks to begin; complete all three paths in any order",
+            "[Past Sins] Speak with Despachiaire (Tavnazia K-10), then Perih Vashai (Windurst Woods K-7); interact with ??? Warmachine on Purgonorgo Isle (H-11)",
+            "[Past Sins] Zone into Oldton Movalpolos; register HP outside Mine Shaft #2716; enter BCNM 'A Century of Hardship' — defeat 5 Moblin bosses + Bugbby",
+            "[Past Sins] Farm Gold Keys from Moblins in Newton Movalpolos; trade at Mine Shaft #2716 entrance; report to Cid",
+            "[Pursuit of Paradise] Check ??? at La Theine Plateau (G-6) for Carbuncle cutscene; enter Pso'Xja tower at Beaucedine Glacier (J-8) and clear 16 Stone Doors (defeat Gargoyles)",
+            "[Pursuit of Paradise] Check Avatar Gate at bottom for cutscene; speak with Monberaux (Upper Jeuno G-10) for Envelope; speak with Pherimociel (Ru'Lude Gardens G-6)",
+            "[Pursuit of Paradise] Check ??? at Batallia Downs (K-8/9) for Delkfutt recognition device; defeat Disaster Idol at Lower Delkfutt Tower (H-5) cermet door",
+            "[Pursuit of Paradise] Enter Pso'Xja tower (Beaucedine Glacier H-10) and reach second Avatar Gate for cutscene; report to Cid",
+            "[Where Messengers Gather] Speak with Hinaree at S.San d'Oria (A-6) 2F; zone into Port San d'Oria for cutscene; speak with Chasalvige at N.San d'Oria Cathedral (L-6)",
+            "[Where Messengers Gather] Speak with Kerutoto at Windurst Rhinostery (J-8); enter Boneyard Gully at Attohwa Chasm (H-6) for BCNM 'Head Wind' — defeat Shikaree X/Y/Z and their pets",
+            "[Where Messengers Gather] Jump into hole at Uleguerand Range (J-9) to enter Bearclaw Pinnacle; enter BCNM 'Flames for the Dead' — defeat Snoll Tzar (use Shu'Meyo Salt to extend time)",
+            "After all three paths complete, speak with Cid in Metalworks for final cutscene — mission complete",
         }},
         ['6-1'] = { name="For Whom the Verse is Sung", steps={
-            -- add steps
+            "Speak with Pherimociel at Ru'Lude Gardens (G-6) for cutscene",
+            "Travel to Marble Bridge at Upper Jeuno (F-7) and interact with door for cutscene",
+            "Return to Ru'Lude Gardens for final cutscene — mission complete",
         }},
         ['6-2'] = { name="A Place to Return", steps={
-            -- add steps
+            "Visit Palace in Ru'Lude Gardens (H-7) for cutscene; speak with Pherimociel at (G-6)",
+            "Travel to Misareaux Coast (I-11) and examine Dilapidated Gate — spawns Warder Thalia, Warder Aglaia, Warder Euphrosyne",
+            "Defeat all three Warder Detectors (Sleep to isolate is viable; all three must die)",
+            "Check Dilapidated Gate again for cutscene — mission complete",
         }},
         ['6-3'] = { name="More Questions than Answers", steps={
-            -- add steps
+            "Speak with Pherimociel at Ru'Lude Gardens (G-6) for cutscene",
+            "Examine Audience Chamber upstairs for another cutscene",
+            "Travel to Selbina (H-9) and speak with Mathilde in the Weaver's Guild office — mission complete",
         }},
         ['6-4'] = { name="One to be Feared", steps={
-            -- add steps
+            "Visit Cid at Metalworks for cutscene",
+            "Zone into Sealion's Den (bottom of stone ramps in Tavnazia) for cutscene",
+            "Click Iron Gate in Sealion's Den for cutscene; board airship via cutscene",
+            "Click airship door for cutscene; enter battlefield 'One to be Feared' (45-min limit, 3 stages)",
+            "Stage 1: Defeat 5 Mammett-22 Zeta; return to deck and rebuff",
+            "Stage 2: Defeat Omega; return to deck and rebuff",
+            "Stage 3: Defeat Ultima — receive Ducal Guard's Ring, cutscene in Lufaise Meadows, mission complete",
         }},
         ['7-1'] = { name="Chains and Bonds", steps={
-            -- add steps
+            "Zone into Tavnazian Safehold after Lufaise Meadows scene for cutscene",
+            "Zone into Sealion's Den for cutscene",
+            "Click Phomiuna Aqueducts entrance on bottom floor for cutscene with Louverance",
+            "Check Walnut Door at (K-7) top floor of Tavnazian Safehold — cutscene with Ulmia, mission complete",
         }},
         ['7-2'] = { name="Flames in the Darkness", steps={
-            -- add steps
+            "Visit north Dilapidated Gate at Misareaux Coast (F-7) for cutscene",
+            "Return to Sealion's Den and speak with Sueleen",
+            "Travel to Ru'Lude Gardens and approach Palace for cutscene",
+            "Go to Upper Jeuno and check door of Marble Bridge Tavern for final cutscene — mission complete",
         }},
         ['7-3'] = { name="Fire in the Eyes of Men", steps={
-            -- add steps
+            "Travel to Mine Shaft #2716 in Oldton Movalpolos and check Shaft Entrance for cutscene",
+            "(Route: use Oldton Movalpolos Home Point; trade Snow Lily to Tarnotik K-10 for warp; or gamble with Twinkbrix at E-13)",
+            "Speak with Cid in Metalworks",
+            "Wait one Vana'diel day and speak with Cid again — mission complete",
         }},
         ['7-4'] = { name="Calm Before the Storm", steps={
-            -- add steps
+            "Speak with Cid in Metalworks (H-8) for briefing",
+            "Check Storage Compartment at Misareaux Coast (E-7) — spawns NM Boggelmann (Bugard); defeat; check again for Vessel of Light",
+            "Click ??? at Carpenters' Landing (I-9) — spawns NM Cryptonberry Executor (NIN) + 3 Assassins; defeat all; check ??? for cutscene",
+            "Click ??? inside cave at Bibiki Bay (F-6) — spawns NM Dalham (Kraken-type); defeat; check ??? for cutscene",
+            "Return to Cid in Metalworks; obtain Letters from Ulmia and Prishe key item",
+            "Speak with Sueleen in Sealion's Den (H-6) near Tavnazian Home Point #2 — mission complete",
         }},
         ['7-5'] = { name="The Warrior's Path", steps={
-            -- add steps
+            "Click Iron Gate in Sealion's Den for cutscene",
+            "Click Iron Gate again to enter BCNM 'The Warrior's Path' (cannot leave until victory or defeat)",
+            "Pull boss away from elevated platform adds; use Stun/Bind/Shadowbind to interrupt WSs",
+            "Defeat boss — cutscene, appear in Al'Taieu, mission complete",
         }},
         ['8-1'] = { name="Garden of Antiquity", steps={
-            -- add steps
+            "Examine Crystalline Field at Al'Taieu (H-11) for cutscene",
+            "Examine Rubious Crystal at (D-10) — defeat Ru'aern NM trio; examine again for cutscene",
+            "Examine Rubious Crystal at (H-13) — defeat Ru'aern NM trio; examine again for cutscene",
+            "Examine Rubious Crystal at (L-10) — defeat Ru'aern NM trio; examine again for cutscene",
+            "Return to Crystalline Field (H-11); examine to enter Grand Palace of Hu'Xzoi",
+            "Examine Gate of the Gods inside for cutscene + Tavnazian Ring reward",
+            "Touch east Particle Gate at (H-8) for final cutscene — mission complete",
         }},
         ['8-2'] = { name="A Fate Decided", steps={
-            -- add steps
+            "Examine east Particle Gate at (H-8) in Grand Palace of Hu'Xzoi for cutscene; examine again to enter",
+            "Escort Quasilumin NPC from Map 1 upper level (J-8) within 5-min limit; use transporter at (L-7)",
+            "Escort Quasilumin from Map 2 basement (L-8) within 30-min limit",
+            "Escort Quasilumin from Map 2 (I-10) within 30-min limit; use transporter at (G-12)",
+            "Escort Quasilumin from Map 1 (G-10) within 40-min limit; use transporter at (G-4)",
+            "Examine Cermet Portal at Map 2 (H-8) and defeat Ix'ghrah (4 forms: ball, bird, spider, humanoid)",
+            "Examine Cermet Portal after defeat for cutscene; return to Gate of the Gods to enter Garden of Ru'Hmet — mission complete",
         }},
         ['8-3'] = { name="When Angels Fall", steps={
-            -- add steps
+            "Check Gate of the Gods (by Home Point in Garden of Ru'Hmet) for cutscene to access upper floors",
+            "Ascend to 4th floor of your race's tower (Elvaan=E, Mithra=W, Tarutaru=SW, Humes=N, Galka=SE); check Ebon Panel twice for race key item",
+            "Navigate to central 1F elevator (run East->North->West); avoid or defeat 4 True-Sight Qn'zdei guards",
+            "Ascend to 2F; collect Brand of Twilight (south) and Brand of Dawn (north) via Warp Distortions",
+            "Return via Home Point; use both brands to ascend elevator to 3F",
+            "Check Particle Gate on 3F for cutscene; check again to enter Burning Circle battlefield",
+            "Defeat 4 Ix'zdei NMs (2 large RDM-type pots, 2 small BLM-type pots)",
+            "Check Luminous Convergence for cutscene; exit south via Particle Gate back to grand palace",
+            "Zone south into Al'Taieu for mission-ending cutscene — mission complete",
         }},
         ['8-4'] = { name="Dawn", steps={
-            -- add steps
+            "Zone into Garden of Ru'Hmet; use Home Point #1 and descend elevator to zone into Empyreal Paradox",
+            "Check Transcendental Radiance for cutscene; check again to enter battlefield 'Dawn'",
+            "Defeat Promathia (2-phase fight) with Prishe and Selh'teus as allies — protect Selh'teus from KO",
+            "(Optional) Check Dilapidated Gate at Misareaux Coast (I-11) to unlock Ulmia Trust",
+            "(Epilogue) Speak with Hinaree at S.San d'Oria (B-6); zone into Uleguerand Range; approach Count Caffaule's Manor (B-6)",
+            "(Epilogue) Speak with Chipmy-Popmy at Port Windurst Fishing Guild (C-8); visit ??? Warmachine on Purgonorgo Isle (H-11) for colored drop reward",
+            "(Epilogue) Zone into Mhaura for Shikarees cutscene; zone into Oldton Movalpolos for Jabbos cutscene",
+            "(Epilogue) Speak with Cid in Metalworks (H-8); approach Palace in Ru'Lude Gardens; click Marble Bridge door in Upper Jeuno twice — select reward ring (Rajas/Sattva/Tamas)",
+            "Check Walnut Door at Tavnazian Safehold (K-7) for final cutscene — mission complete",
+            "(Optional) Check Walnut Door again post-epilogue to unlock Prishe Trust",
         }},
         ['8-5'] = { name="The Last Verse", steps={
-            -- add steps
+            "Completion marker — appears in mission log automatically after finishing Apocalypse Nigh; no steps required",
         }},
     },
 
