@@ -23,21 +23,21 @@ local MISSIONS = {
             "Kill Orcish Fodders until an Orcish Axe drops",
             "Trade the Orcish Axe to any Gate Guard",
         }},
-        ['1-2'] = { name="The Rescue Drill", steps={
+        ['1-2'] = { name="Bat Hunt", steps={
             "Talk to any Gate Guard",
             "Kill Ding Bats in King Ranperre's Tomb (night only) until Orcish Mail Scales drop",
             "Touch the Tombstone at H/I-10 in KRT for a CS",
             "(Bats and tombstone can be done in either order)",
             "Trade the Orcish Mail Scales to any Gate Guard",
         }},
-        ['1-3'] = { name="A Geological Survey", steps={
+        ['1-3'] = { name="Save the Children", steps={
             "Talk to any Gate Guard",
             "Talk to Arnau in Northern San d'Oria (M-6)",
             "Go to Ghelsba Outpost, examine Hut Door at G-9",
             "Fight 3 orcs, then CS at the Hut Door",
             "Return to any Gate Guard",
         }},
-        ['2-1'] = { name="Bat Hunt", steps={
+        ['2-1'] = { name="The Rescue Drill", steps={
             "Talk to any Gate Guard",
             "Talk to Galaihaurat in La Theine Plateau (E-6)",
             "Talk to Ruillont in Ordelle's Caves (G-3)",
@@ -46,7 +46,7 @@ local MISSIONS = {
             "Talk to Vicorpass in La Theine Plateau (F-6)",
             "Return to any Gate Guard",
         }},
-        ['2-2'] = { name="The Emissary", steps={
+        ['2-2'] = { name="The Davoi Report", steps={
             "Talk to any Gate Guard",
             "Go to Davoi, talk to Zantaviat",
             "Examine ! at J-8 in Davoi",
@@ -314,7 +314,7 @@ local MISSIONS = {
             "Fight in Qu'Bia Arena",
             "Return to Naji",
         }},
-        ['5-2'] = { name="Darkness Named", steps={
+        ['5-2'] = { name="Xarcabard, Land of Truths", steps={
             "Enter Door: President's Office in Metalworks",
             "Talk to Karst",
             "Enter Door: Throne Room for CS",
